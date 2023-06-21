@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "ljvendas-a13ef"
+  },
+  "targets": {
+    "ljvendas-a13ef": {
+      "hosting": {
+        "LJVendas": [
+          "ljvendas-a13ef"
+        ]
+      }
+    }
+  }
+}

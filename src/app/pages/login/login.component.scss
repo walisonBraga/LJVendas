@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  font-weight: bolder;
+  color: #000000;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  width: 100%;
+  height: 92vh;
+  background-image: linear-gradient(to bottom right, rgb(112, 2, 255), rgb(255, 0, 0));
+}
+
+.container {
+  background: #ffffff;
+  box-shadow: 10px 10px 40px rgb(255, 0, 0);
+  width: 380px;
+  height: 25%;
+  border-radius: 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -100px;
+}
+
+.content-text,
+h1 {
+  font-family: "Inter", sans-serif;
+  padding: 5px 5px 5px 8px;
+}
+
+.container-password,
+.label-password {
+  font-family: "Inter", sans-serif;
+  font-weight: bolder;
+  display: block;
+  margin: 0 0 5px 15px;
+}
+
+.container-password input {
+  height: 30px !important;
+  width: 25vh;
+  border: none;
+  background-color: rgb(215, 221, 221);
+  border-radius: 5px;
+  padding-left: 15px 15px auto;
+  cursor: pointer;
+}
+
+.container-email,
+.label-email {
+  font-family: "Inter", sans-serif;
+  font-weight: 800;
+  display: block;
+  margin: 0 0 5px 15px;
+}
+
+.container-email input {
+  height: 30px !important;
+  width: 25vh;
+  border: none;
+  background-color: rgb(215, 221, 221);
+  border-radius: 5px;
+  padding-left: 15px 15px auto;
+  cursor: pointer;
+}
+
+.loginBttn button {
+  width: 25vh;
+  height: 30px;
+  text-align: center;
+  border-radius: 5px;
+  color: #ffffff;
+  background: #0088f8;
+  border: none;
+  margin: 15px 15px 15px 15px;
+}
+
+.loginBttn button:hover {
+  background-color: rgb(255, 255, 255);
+  color: #0088f8;
+}
+
+.container-password input:focus {
+  outline: none;
+}
+
+.container-email input:focus {
+  outline: none;
+}

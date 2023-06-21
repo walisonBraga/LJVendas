@@ -1,0 +1,26 @@
+<form action [formGroup]="loginForm" (submit)="loginSubmit()">
+  <div class="card-container">
+
+    <div class="container">
+      <div class="content-text">
+        <h1>Login</h1>
+      </div>
+
+      <div class="container-email">
+        <label for="email" class="label-email">Email</label>
+        <input type="email" name="email" id="email"
+          placeholder="Digite seu e-mail" formControlName="email">
+      </div>
+
+      <div class="container-password">
+        <label for="password" class="label-password">Senha</label>
+        <input type="password" name="password" id="input-password"
+          placeholder="Digite seu e-mail" autofocus="true" formControlName="password">
+      </div>
+
+      <div class="loginBttn">
+        <button class="btnlogin" type="submit">Login</button>
+      </div>
+    </div>
+  </div>
+</form>

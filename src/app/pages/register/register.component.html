@@ -1,0 +1,37 @@
+<form action method="post" [formGroup]="registerFrom" (ngSubmit)="ngSubmit()">
+  <div class="container-fluid">
+    <h1>Cadastro de Usuário</h1>
+
+    <div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form-group">
+            <label class="control-label">Cadastro de Usuário</label>
+            <input type="text" class="form-control"
+              placeholder="Cadastro de Usuário" formControlName="name">
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="form-group">
+            <label class="control-label">Email</label>
+            <input type="email" class="form-control"
+              placeholder="Email" formControlName="email">
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="form-group">
+            <label class="control-label">Senhar</label>
+            <input type="password" class="form-control"
+              placeholder="Password" formControlName="password">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="btn-dark">
+    <button type="submit" class="btn btn-primary">Entar</button>
+  </div>
+</form>

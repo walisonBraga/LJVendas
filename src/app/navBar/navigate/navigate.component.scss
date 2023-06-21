@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+
+:root {
+  --bg-color: #fff;
+  --text-white: #2c3e50;
+  --color-secondary: #95a5a6;
+  --text-color-quaternary: #7f8c8d;
+}
+
+.container{
+  background-color: #7f8c8d;
+  width: 100%;
+}
+
+.nav {
+  z-index: -1;
+  display: flex;
+}
+
+.nav,
+text,
+p {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 10px 10px 10px 10px;
+}
+
+.text {
+  margin-top: 15px;
+  font-weight: 800;
+}
+
+.loginBttn {
+  display: flex;
+  margin-left: auto;
+  margin-top: 15px;
+}
+
+.loginBttn,
+.btn-login {
+  border-radius: 4px;
+  border: none;
+  width: 100px;
+  height: 30px;
+  color: #2c3e50;
+  background: #fff;
+  font-weight: bolder;
+  font-weight: 800;
+}
+
+.registerBttn{
+  margin-top: 15px;
+}
+
+.btn-register {
+  border-radius: 4px;
+  border: none;
+  width: 100px;
+  height: 30px;
+  color: #ffffff;
+  background: hwb(239 33% 14%);
+  font-weight: bolder;
+  margin: 0 15px;
+  font-weight: 800;
+}
+
+button:hover {
+  background-color: #333333;
+  color: wheat;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+
+
