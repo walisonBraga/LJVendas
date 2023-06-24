@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Auth, User, UserInfo, createUserWithEmailAndPassword, signInWithEmailAndPassword } from '@angular/fire/auth';
-import { Firestore, collection, collectionData, doc, getDoc, query, where, getDocs } from '@angular/fire/firestore';
+import { Firestore, collection, doc, query, where, getDocs, deleteDoc } from '@angular/fire/firestore';
+import { auth } from 'firebaseui';
 
 @Injectable({
   providedIn: 'root'
@@ -24,6 +25,12 @@ export class AuthService {
     this.user = JSON.parse(localStorage.getItem('user')!) as User;
     const userInfo = JSON.parse(localStorage.getItem('userInfo')!) as UserInfo;
     return userInfo;
+  }
+
+  deleteDoc(uid: string) {
+    const authRef = this.afAuth.currentUser ? this.afAuth.currentUser
+      .delete() : this.afAuth.languageCode;
+    return authRef
   }
 
   getUserInfo(id: string): void {
