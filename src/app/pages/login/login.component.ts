@@ -33,6 +33,7 @@ export class LoginComponent implements OnInit {
         const errorMessage = error.message;
       });
 
+    this.loginForm.reset();
   }
 
 }

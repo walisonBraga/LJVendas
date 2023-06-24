@@ -1,99 +1,137 @@
-@import url("https://fonts.googleapis.com/css2family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Inter", sans-serif;
-  font-weight: bolder;
   color: #000000;
 }
 
-.card-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  align-content: center;
-  justify-content: center;
+.container-fluid {
   width: 100%;
-  height: 92vh;
-  background-image: linear-gradient(to bottom right, rgb(112, 2, 255), rgb(255, 0, 0));
+  height: 109vh;
+  background-image: linear-gradient(to bottom right, rgb(0, 0, 0), rgb(46, 199, 16));
 }
 
-.container {
-  background: #ffffff;
-  box-shadow: 10px 10px 40px rgb(255, 0, 0);
-  width: 380px;
-  height: 25%;
-  border-radius: 15px;
-  position: absolute;
-  top: 50%;
+.card {
+  top: 35%;
   left: 50%;
   margin: -100px;
+  width: 480px;
+  height: 270px;
+  box-shadow: 10px 10px 40px rgb(255, 255, 255);
 }
 
-.content-text,
-h1 {
-  font-family: "Inter", sans-serif;
-  padding: 5px 5px 5px 8px;
-}
-
-.container-password,
-.label-password {
-  font-family: "Inter", sans-serif;
-  font-weight: bolder;
-  display: block;
-  margin: 0 0 5px 15px;
-}
-
-.container-password input {
-  height: 30px !important;
-  width: 25vh;
-  border: none;
-  background-color: rgb(215, 221, 221);
-  border-radius: 5px;
-  padding-left: 15px 15px auto;
-  cursor: pointer;
-}
-
-.container-email,
-.label-email {
-  font-family: "Inter", sans-serif;
-  font-weight: 800;
-  display: block;
-  margin: 0 0 5px 15px;
-}
-
-.container-email input {
-  height: 30px !important;
-  width: 25vh;
-  border: none;
-  background-color: rgb(215, 221, 221);
-  border-radius: 5px;
-  padding-left: 15px 15px auto;
-  cursor: pointer;
-}
-
-.loginBttn button {
-  width: 25vh;
+.card input {
+  margin-top: 5px;
+  margin-bottom: 1px;
+  width: 250px;
+  margin-left: 15px;
+  margin-right: 10px;
   height: 30px;
-  text-align: center;
+
   border-radius: 5px;
-  color: #ffffff;
-  background: #0088f8;
-  border: none;
-  margin: 15px 15px 15px 15px;
+  border: 1px solid #a19d9d;
+  padding: 5px;
+  font-size: 14px;
 }
 
-.loginBttn button:hover {
-  background-color: rgb(255, 255, 255);
-  color: #0088f8;
-}
-
-.container-password input:focus {
+.card input:focus {
   outline: none;
+  border: 1px solid #928585;
+
+  box-shadow: 0px 0px 10px #00deee;
+  -webkit-box-shadow: 0px 0px 10px #000000;
 }
 
-.container-email input:focus {
-  outline: none;
+.card h4 {
+  position: absolute;
+
+  margin-top: 15px;
+  width: 280px;
+  margin-bottom: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
+  height: 30px;
+  border-radius: 5px;
+  font-size: 25px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+    "Helvetica Neue", sans-serif;
+}
+
+.card-header button,
+#bttn {
+  margin-left: 70%;
+  width: 28%;
+}
+
+.card label {
+  font-size: 14px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+    "Helvetica Neue", sans-serif;
+  font-weight: 600;
+  margin-bottom: 5px;
+  margin-left: 25px;
+  margin-right: 15px;
+  border-radius: 5px;
+
+  display: block;
+  margin-bottom: 5px;
+}
+
+.card button {
+  font-size: 14px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+    "Helvetica Neue", sans-serif;
+  font-weight: 600;
+  margin-bottom: 5px;
+  margin-left: 25px;
+  margin-right: 15px;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+.subtitles{
+  display: block;
+}
+ .subtitles span {
+  position: absolute;
+  display: flex;
+  margin-bottom: 0;
+  justify-content: center;
+  margin-top: 30px;
+  margin-left: 280px;
+
+  font-weight:500;
+  font-size: 14px;
+
+
+ }
+
+.logo img{
+  position: absolute;
+  display: flex;
+  margin-left: 300px;
+  width: 150px;
+  height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    box-shadow: none;
+    border-radius: 0;
+
+    display: block;
+  }
+}
+
+.card button:hover {
+  cursor: pointer;
+}
+
+.card label:hover {
+  cursor: pointer;
 }

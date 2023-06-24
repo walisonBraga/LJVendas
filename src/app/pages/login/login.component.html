@@ -1,25 +1,38 @@
 <form action [formGroup]="loginForm" (submit)="loginSubmit()">
-  <div class="card-container">
+  <div class="container-fluid">
+    <div class="card">
 
-    <div class="container">
-      <div class="content-text">
-        <h1>Login</h1>
+      <div class="card-header">
+        <h4 class="card-title">Login</h4>
+        <button id="bttn" mat-raised-button color="primary" type="submit"
+          routerLink="/register">
+          cadastre-se</button>
       </div>
 
-      <div class="container-email">
-        <label for="email" class="label-email">Email</label>
-        <input type="email" name="email" id="email"
-          placeholder="Digite seu e-mail" formControlName="email">
+      <div class="subtitles">
+        <span>Faça login com segurança</span>
       </div>
 
-      <div class="container-password">
-        <label for="password" class="label-password">Senha</label>
-        <input type="password" name="password" id="input-password"
-          placeholder="Digite seu e-mail" autofocus="true" formControlName="password">
+      <div class="logo">
+        <img src="../../../assets/img/undraw_real_time_sync_re_nky7.svg" alt
+          srcset>
       </div>
 
-      <div class="loginBttn">
-        <button class="btnlogin" type="submit">Login</button>
+      <div class="form-group">
+        <label class="form-control-label" for="username">Email</label>
+        <input type="text" class="form-control" id="emial"
+          formControlName="email" required>
+      </div>
+
+      <div class="form-group">
+        <label class="form-control-label" for="password">Password</label>
+        <input type="password" class="form-control" id="password"
+          formControlName="password" required minlength="5">
+      </div>
+
+      <div class="example-button-row">
+        <button mat-raised-button color="primary" type="submit" [disabled]="!loginForm.valid">Logar</button>
+        <button mat-raised-button color="accent" type="reset">Cancelar</button>
       </div>
     </div>
   </div>

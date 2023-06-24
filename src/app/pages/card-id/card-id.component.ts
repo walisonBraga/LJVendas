@@ -1,5 +1,5 @@
 import { FormGroup } from '@angular/forms';
-import { Component } from '@angular/core';
+import { Component, EventEmitter } from '@angular/core';
 import { CardService } from 'src/app/services/card.service';
 import { Register } from 'src/app/interface/register.interface';
 
@@ -18,13 +18,18 @@ export class CardIDComponent {
       this.cardObjs = data;
       if (data.length > 0) {
       }
-      console.log(this.cardObjs);
+      // console.log(this.cardObjs);
     })
   }
 
   editar() { }
 
-  removeCard() { }
-
-
+  deleteCard(uid: string): void {
+    this.cardService.deleteData(uid);
+    if (this.cardService) {
+      alert('Deletado com sucesso')
+    } else {
+      alert('Delete error');
+    }
+  }
 }
