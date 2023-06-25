@@ -31,7 +31,8 @@ import { CardIDComponent } from './pages/card-id/card-id.component';
 //API
 import { MatCardModule } from '@angular/material/card';
 import {MatButtonModule} from '@angular/material/button';
-import {MatIconModule} from '@angular/material/icon'
+import {MatIconModule} from '@angular/material/icon';
+import { CentralComponent } from './pages/central/central.component'
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import {MatIconModule} from '@angular/material/icon'
     LoginComponent,
     RegisterComponent,
     NavigateComponent,
-    CardIDComponent
+    CardIDComponent,
+    CentralComponent
   ],
   imports: [
     BrowserModule,

@@ -40,7 +40,7 @@ export class CardIDComponent {
         this.cardService.deleteData(uid);
         this.afAuth.deleteDoc(uid);
         Swal.fire(
-          'Deleted!',
+          'deletado!',
           `usuário deletado com sucesso ${name}`,
           'success'
         )

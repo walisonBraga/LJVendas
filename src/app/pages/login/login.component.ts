@@ -34,7 +34,7 @@ export class LoginComponent implements OnInit {
           showConfirmButton: false,
           timer: 1500
         })
-        this.router.navigate(['/card']);
+        this.router.navigate(['/central']);
         return result;
       }).catch((error) => {
         Swal.fire({
@@ -42,10 +42,11 @@ export class LoginComponent implements OnInit {
           icon: 'error',
           title: 'Email/Password Error',
           showConfirmButton: false,
-          timer: 1500
+          timer: 2500
         })
-        const errorCode = error.code;
         const errorMessage = error.message;
+        return errorMessage;
+
       });
 
     // this.loginForm.reset();
